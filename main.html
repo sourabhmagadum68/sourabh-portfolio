@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sourabh Magadum — Graphic Designer & Visual Storyteller</title>
+<meta name="description" content="Projects by Sourabh Magadum, Graphic Designer specializing in branding, editorial design, poster design, UI/UX and AI-assisted creative design.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-atmosphere">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
+<div class="grain"></div>
+<div id="cursor-glow"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo-mark">SM</a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="https://drive.google.com/file/d/13x7GMS-1G3-x4LWeuCRlL1zzRRJfFygk/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:13px; padding:9px 18px;">Resume</a>
+    <button id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mobileMenu">
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="https://drive.google.com/file/d/13x7GMS-1G3-x4LWeuCRlL1zzRRJfFygk/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center; margin-top:10px;">Resume</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow reveal">Graphic Designer · Bengaluru, IN</div>
+      <h1 class="hero-title reveal" style="margin-top:22px;">
+        Hi, I'm<br>
+        <span class="grad-text">Sourabh Magadum.</span>
+      </h1>
+      <div class="hero-title reveal" style="font-size:clamp(20px,2.6vw,28px); font-weight:500; color:var(--muted); margin-top:18px;">
+        <span class="role-cycle" id="roleCycle">
+          <span class="role-list" id="roleList">
+            <span>Creative Visual Storyteller</span>
+            <span>Brand Identity Designer</span>
+            <span>Editorial & Poster Designer</span>
+          </span>
+        </span>
+      </div>
+      <p class="reveal" style="max-width:520px; margin-top:26px; font-size:15.5px;">
+        Crafting brands, editorial layouts, and cinematic posters — turning ideas into visual stories with precision and creativity.
+      </p>
+      <div class="reveal" style="display:flex; gap:14px; margin-top:36px; flex-wrap:wrap;">
+        <a href="#projects" class="btn btn-primary magnetic">View Projects →</a>
+        <a href="https://drive.google.com/file/d/13x7GMS-1G3-x4LWeuCRlL1zzRRJfFygk/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost magnetic">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap reveal">
+      <div class="ring" style="width:460px; height:460px; top:50%; left:50%; transform:translate(-50%,-50%); animation:float 30s linear infinite;"></div>
+      <div class="hero-photo glass">
+        <div class="hero-photo-inner">
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783365376/xckltcx8mwuo2loppnwb.png" alt="Sourabh Magadum" class="profile-img">
+        </div>
+        <div class="avail-badge glass">
+          <span class="avail-dot"></span> Available for work
+        </div>
+      </div>
+      <div class="stat-chip glass" style="top:6%; left:-8%;">
+        <div class="num">1+</div>
+        <div class="lbl">Years Exp.</div>
+      </div>
+      <div class="stat-chip glass" style="bottom:8%; right:-10%;">
+        <div class="num">100+</div>
+        <div class="lbl">Projects Shipped</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="about-photo glass">
+        <div class="about-photo-inner">
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783367592/lvj9uicyolhqj4z7m09e.png"
+             alt="Sourabh Magadum"
+             class="about-profile-img">
+        </div>
+      </div>
+      <div class="info-cards">
+        <div class="info-card glass">
+          <div class="k">Experience</div>
+          <div class="v">1+ Year</div>
+        </div>
+        <div class="info-card glass">
+          <div class="k">Education</div>
+          <div class="v">B.E. Computer Science</div>
+        </div>
+        <div class="info-card glass">
+          <div class="k">Certification</div>
+          <div class="v">Adobe × Coursera</div>
+        </div>
+        <div class="info-card glass">
+          <div class="k">Location</div>
+          <div class="v">Bengaluru, IN</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">About Me</div>
+      <h2 class="sec-head" style="margin-bottom:22px;">Design is how I <span class="grad-text">think out loud.</span></h2>
+      <p style="font-size:15.5px;">
+        I'm a graphic designer based in Bengaluru, working across branding, editorial layout, poster design, and AI-assisted creative workflows. A Computer Science background gave me structured thinking; design gave me a way to turn that into visuals people remember. Every project is an exercise in storytelling — precise, considered, and built to be recognizable as mine.
+      </p>
+      <div style="display:flex; gap:10px; margin-top:26px; flex-wrap:wrap;">
+        <span class="t-tag">English</span>
+        <span class="t-tag">Hindi</span>
+        <span class="t-tag">Kannada</span>
+      </div>
+
+      <div style="margin-top:56px;">
+        <div class="eyebrow">Education</div>
+        <div class="timeline" style="margin-top:26px;">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-role">Bachelor of Engineering — Computer Science</div>
+              <div class="t-org">VTU (Visvesvaraya Technological University)</div>
+              <div class="t-date">Graduated 2026</div>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-role">Diploma</div>
+              <div class="t-org">Technical Diploma Program</div>
+              <div class="t-date">2020 — 2023</div>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-role">Design Fundamentals with AI</div>
+              <div class="t-org">Adobe — Coursera Certificate</div>
+              <div class="t-date">Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Career Path</div>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline" style="max-width:760px;">
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card glass">
+          <div class="t-role">Freelance Graphic Designer</div>
+          <div class="t-org">Go Mobility</div>
+          <div class="t-date">March 2025 — July 2025</div>
+          <div class="t-list">
+            <span class="t-tag">Poster Design</span>
+            <span class="t-tag">Thumbnail Design</span>
+            <span class="t-tag">Marketing Creatives</span>
+          </div>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card glass">
+          <div class="t-role">Graphic Designer</div>
+          <div class="t-org">Unacademy</div>
+          <div class="t-date">July 2025 — January 2026</div>
+          <div class="t-list">
+            <span class="t-tag">Poster Design</span>
+            <span class="t-tag">Thumbnail Design</span>
+            <span class="t-tag">Brand Marketing</span>
+            <span class="t-tag">Social Media Design</span>
+          </div>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card glass">
+          <div class="t-role">Graphic Designer</div>
+          <div class="t-org">Terra</div>
+          <div class="t-date">January 2026 — June 2026</div>
+          <div class="t-list">
+            <span class="t-tag">Digital Campaign Design</span>
+            <span class="t-tag">Posters</span>
+            <span class="t-tag">Brand Assets</span>
+            <span class="t-tag">Marketing Graphics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Selected Work</div>
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="masonry" id="projectsGrid">
+ 
+      <!-- PROJECT 1 : Editorial Fashion Poster -->
+      <div class="proj-card glass reveal" data-modal="modal-p1">
+        <div class="proj-media">
+          <span class="tag">Editorial · Poster</span>
+          <!-- Replace src below with your project 1 cover image -->
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783369934/ka6utuoncczubsvjyqtz.png" alt="Editorial Fashion Poster cover">
+          <div class="proj-arrow">→</div>
+        </div>
+        <div class="proj-body">
+          <h3>Editorial Fashion Poster</h3>
+          <p>A monochrome editorial poster built on typography, negative space, and a single red accent.</p>
+        </div>
+      </div>
+ 
+      <!-- PROJECT 2 : Urban Editorial Poster -->
+      <div class="proj-card glass reveal" data-modal="modal-p2">
+        <div class="proj-media">
+          <span class="tag">Urban · Editorial</span>
+          <!-- Replace src below with your project 2 cover image -->
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783370066/cchy7doyqj5ihbucbj2w.png" alt="Urban Editorial Poster cover">
+          <div class="proj-arrow">→</div>
+        </div>
+        <div class="proj-body">
+          <h3>Urban Editorial Poster</h3>
+          <p>Bold typography meets grain texture and documentary-style photography in a modern editorial layout.</p>
+        </div>
+      </div>
+ 
+      <!-- PROJECT 3 : Creative Portrait Poster -->
+      <div class="proj-card glass reveal" data-modal="modal-p3">
+        <div class="proj-media">
+          <span class="tag">Portrait · Campaign</span>
+          <!-- Replace src below with your project 3 cover image -->
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783370216/fs6kgid6raidkerkbxn0.png" alt="Creative Portrait Poster cover">
+          <div class="proj-arrow">→</div>
+        </div>
+        <div class="proj-body">
+          <h3>Creative Portrait Poster</h3>
+          <p>Glowing green-lit typography paired with portrait retouching for a social media campaign.</p>
+        </div>
+      </div>
+ 
+      <!-- PROJECT 4 : Island Movie Poster -->
+      <div class="proj-card glass reveal" data-modal="modal-p4">
+        <div class="proj-media">
+          <span class="tag">Cinematic · Poster</span>
+          <!-- Replace src below with your project 4 cover image -->
+          <img src="https://res.cloudinary.com/hmcu7v6a/image/upload/v1783370332/njowuoi2fss1ir846j8z.png" alt="Island Movie Poster cover">
+          <div class="proj-arrow">→</div>
+        </div>
+        <div class="proj-body">
+          <h3>Island Movie Poster</h3>
+          <p>A Hollywood-inspired cinematic poster built through large-scale photo manipulation and lighting.</p>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Toolkit</div>
+      <h2>Skills & Tools</h2>
+    </div>
+    <div class="skill-grid" id="skillGrid"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">What I Do</div>
+      <h2>Services</h2>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
+<section id="certificate">
+  <div class="wrap">
+    <div class="cert-card glass reveal">
+      <div class="cert-badge">
+        <div class="cert-badge-inner grad-text">Ai</div>
+      </div>
+      <div>
+        <div class="eyebrow">Certification</div>
+        <h3 style="font-size:24px; font-weight:600; margin-top:10px;">Design Fundamentals with AI</h3>
+        <p style="margin-top:8px; font-size:14.5px;">Issued by Adobe, delivered via Coursera — covering AI-assisted design workflows, creative fundamentals, and applied tools including Adobe Firefly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="wrap">
+    <div class="resume-card glass reveal">
+      <div class="eyebrow" style="justify-content:center;">Let's talk shop</div>
+      <h2 style="margin-top:16px;">Want the full story on paper?</h2>
+      <p style="max-width:480px; margin:14px auto 0;">Grab my resume for the complete rundown of experience, tools, and education.</p>
+      <a href="https://drive.google.com/file/d/13x7GMS-1G3-x4LWeuCRlL1zzRRJfFygk/view?usp=sharing" target="_blank" class="btn btn-primary magnetic" style="margin-top:28px;">Download Resume ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Let's build something memorable.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card glass reveal">
+        <div class="contact-row">
+          <div class="c-icon">✉</div>
+          <div>
+            <div class="c-k">Email</div>
+            <div class="c-v"><a href="mailto:sourabhmagadum528@gmail.com">sourabhmagadum528@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">☎</div>
+          <div>
+            <div class="c-k">Phone</div>
+            <div class="c-v"><a href="tel:+917721902719">+91 77219 02719</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">⌖</div>
+          <div>
+            <div class="c-k">Location</div>
+            <div class="c-v"><a href="https://www.google.com/maps/search/?api=1&query=Bengaluru%2C+Karnataka" target="_blank" rel="noopener">Bengaluru, Karnataka ↗</a></div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.linkedin.com/in/sourabh-magadum-5092372a4/" target="_blank" aria-label="LinkedIn">in</a>
+          <a class="social-btn" href="https://www.behance.net/sourabhmagadum1" target="_blank" aria-label="Behance">Be</a>
+          <a class="social-btn" href="https://www.instagram.com/ux.psychology.05" target="_blank" aria-label="Instagram">Ig</a>
+        </div>
+      </div>
+
+      <div class="contact-card glass reveal">
+        <form id="contactForm">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" id="fName" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" id="fEmail" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" id="fMessage" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" id="fSubmit" class="btn btn-primary magnetic" style="width:100%; justify-content:center;">Send Message</button>
+          <p id="formNote" style="font-size:12.5px; margin-top:12px; text-align:center; color:var(--muted);"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="logo-mark" style="width:34px; height:34px; font-size:13px;">SM</div>
+      <span style="font-size:13.5px; color:var(--muted); font-family:'Inter';">Designed with passion by Sourabh Magadum.</span>
+    </div>
+    <div id="toTop" class="glass">↑</div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modal-overlay">
+  <div class="modal-panel" id="modalPanel"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
